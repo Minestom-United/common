@@ -1,7 +1,9 @@
 [versions]
 minestom = "2026.05.17c-26.1.1"
 adventure = "5.1.1"
+slf4j = "2.0.18"
 
 [libraries]
 minestom = { module = "net.minestom:minestom", version.ref = "minestom" }
 minimessage = { module = "net.kyori:adventure-text-minimessage", version.ref = "adventure" }
+logging-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
