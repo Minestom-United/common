@@ -9,6 +9,8 @@ import net.minestom.server.coordinate.BlockVec;
 import net.minestom.server.coordinate.Pos;
 import net.minestom.server.entity.PlayerSkin;
 
+import java.time.Instant;
+
 public final class CodecUtils {
     public static final Codec<Pos> POS = StructCodec.struct(
             "x", Codec.DOUBLE, Pos::x,
@@ -49,4 +51,6 @@ public final class CodecUtils {
 
     public static final Codec<NamedTextColor> NAMED_TEXT_COLOR =
             Codec.STRING.transform(NamedTextColor.NAMES::value, NamedTextColor::name);
+
+    public static final Codec<Instant> INSTANT = Codec.STRING.transform(Instant::parse, Instant::toString);
 }
