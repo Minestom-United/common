@@ -3,5 +3,10 @@ plugins {
 }
 
 repositories {
+    gradlePluginPortal()
     mavenCentral()
+}
+
+dependencies {
+    implementation("com.vanniktech:gradle-maven-publish-plugin:0.36.0")
 }

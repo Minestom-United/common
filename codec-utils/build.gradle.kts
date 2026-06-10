@@ -2,6 +2,8 @@ plugins {
     id("publish-conventions")
 }
 
+description = "Some utilities for Minestom codecs"
+
 repositories {
     mavenCentral()
 }
