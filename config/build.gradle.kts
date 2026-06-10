@@ -2,6 +2,8 @@ plugins {
     id("publish-conventions")
 }
 
+description = "A simple config library"
+
 repositories {
     mavenCentral()
 }
@@ -11,5 +13,4 @@ dependencies {
     compileOnly(libs.minestom)
     compileOnly(libs.minimessage)
     compileOnly(libs.logging.api)
-
 }
