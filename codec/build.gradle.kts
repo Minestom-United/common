@@ -9,5 +9,8 @@ repositories {
 }
 
 dependencies {
-    compileOnly(libs.minestom)
+    api(libs.jetbrainsAnnotations)
+    api(libs.gson)
+    api(libs.adventure)
+    api(libs.adventure.nbt)
 }
