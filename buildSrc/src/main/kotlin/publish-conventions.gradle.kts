@@ -3,7 +3,7 @@ plugins {
     `maven-publish`
 }
 
-group = "dev.minestomunited.common"
+group = "dev.minestom-united.common"
 version = getVersionForSubProject(project)
 
 java {

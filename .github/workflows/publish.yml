@@ -14,9 +14,6 @@ jobs:
   publish:
     if: github.repository == 'Minestom-United/common'
     runs-on: ubuntu-latest
-    env:
-      REPO_USERNAME: ${{ secrets.REPO_USERNAME }}
-      REPO_PASSWORD: ${{ secrets.REPO_PASSWORD }}
 
     steps:
       - uses: actions/checkout@v7
@@ -31,7 +28,7 @@ jobs:
         with:
           cache-read-only: false
 
-      - name: Publish Jar
+      - name: Publish
         run: ./gradlew --build-cache --parallel publish --no-daemon
         env:
           REPO_USERNAME: ${{ secrets.REPO_USERNAME }}

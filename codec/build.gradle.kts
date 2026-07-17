@@ -2,10 +2,15 @@ plugins {
     id("publish-conventions")
 }
 
+description = "A library to get Minestom codecs everywhere"
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compileOnly(libs.minestom)
+    api(libs.jetbrainsAnnotations)
+    api(libs.gson)
+    api(libs.adventure)
+    api(libs.adventure.nbt)
 }
