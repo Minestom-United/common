@@ -9,7 +9,6 @@ version = getVersionForSubProject(project)
 
 java {
     withSourcesJar()
-    withJavadocJar()
 }
 
 mavenPublishing {
