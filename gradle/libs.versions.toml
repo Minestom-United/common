@@ -1,7 +1,7 @@
 [versions]
-minestom = "2026.07.22-26.2"
+minestom = "2026.08.28-26.2"
 adventure = "5.2.0"
-slf4j = "2.0.18"
+slf4j = "2.0.19"
 jetbrainsAnnotations = "26.1.0"
 gson = "2.14.0"
 
